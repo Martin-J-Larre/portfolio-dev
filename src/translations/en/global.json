@@ -1,0 +1,13 @@
+{
+  "nav":{
+    "home":"Home",
+    "about":"About Me",
+    "skills":"Skills",
+    "projects":"Projects",
+    "contact":"Contact"
+  },
+  "about":{
+    "title": "MARTIN J. LARRE",
+    "subtitle": "WEB DEVELOPMENT"
+  }
+}

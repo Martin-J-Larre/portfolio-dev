@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+.skills {
+  padding: 0;
+  position: relative;
+  margin-bottom: 10px;
+}
+.skill--box {
+  background: #151515;
+  border-radius: 30px;
+  text-align: center;
+  padding: 30px 50px;
+  margin-top: -40px;
+  /* border: 0.5px solid rgba(255, 255, 255, 0.1); */
+}
+.skill--box h2 {
+  font-size: 30px;
+	font-weight: 400;
+  opacity: 0.75;
+  margin-bottom: 20px;
+}
+.skill--box p {
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+  opacity: 0.75;
+}
+.skill-slider {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.skill-slider .item{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill-slider .item .techIcons {
+  height: 80px;
+}
+.tech-name{
+  margin-top: 5px;
+  font-family: 'Rajdhani', sans-serif;
+  text-align: center;
+  font-weight: 400;
+}
+.background-image-right{
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}

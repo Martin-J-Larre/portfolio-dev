@@ -1,0 +1,68 @@
+.proj-imgbx {
+  width: 440px;
+  height: 265px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 24px;
+  background-color: rgb(255 255 255 / 10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.proj-imgbx img{
+  width: 400px;
+  height: 225px;
+  box-shadow: 2px 2px 20px black;
+  object-fit: fill;
+}
+
+.proj-imgbx::before {
+  content: "";
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+  background-blend-mode: multiply,multiply;
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+.proj-imgbx:hover::before {
+  height: 100%;
+}
+.proj-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+.proj-imgbx:hover .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
+.proj-txtx h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+.proj-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+.proj-txtx .proj-icons a{
+  font-size: 30px;
+  margin: 10px;
+  color: #fff;
+}
+.proj-txtx .proj-icons a:hover{
+  color: #131313;
+}
