@@ -4,7 +4,6 @@ import './projectCard.css'
 
 export const ProjectCard = ({imgUrl, title, description, gitHubUrl, demoUrl}) => {
   return (
-      <Col>
           <div className="proj-imgbx">
               <img src={imgUrl} />
               <div className="proj-txtx">
@@ -26,6 +25,5 @@ export const ProjectCard = ({imgUrl, title, description, gitHubUrl, demoUrl}) =>
                   </div>
               </div>
           </div>
-      </Col>
   );
 }

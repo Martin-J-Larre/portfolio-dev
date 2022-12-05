@@ -30,7 +30,8 @@
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 25%;
+  /* width: 25%; when it will be the 4th one */
+  width: 33.3%;
   height: 40px;
 }
 .project .nav.nav-pills .nav-link {
@@ -75,11 +76,12 @@
 }
 .nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 55px 55px 0; 
 }
-.nav-link#projects-tabs-tab-fourth {
+/* .nav-link#projects-tabs-tab-fourth {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
-}
+} */
 .background-image-left {
   top: 28%;
   position: absolute;
@@ -94,4 +96,9 @@
   width: 35%;
   right: 0;
   z-index: -4;
+}
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
