@@ -1,10 +1,34 @@
 import { useState } from "react";
 import { Container, Col, Row, Nav, Tab, Button } from 'react-bootstrap';
+import ReactPaginate from 'react-paginate';
 import { frontEndprojectsList } from '../../helpers/frontEndprojectsList';
 import { ProjectCard } from '../ProjectCard/ProjectCard';
 import './projects.css';
 
 export const Projects = () => {
+  const [frondEnd, setFrondEnd] = useState(frontEndprojectsList);
+  const [pageNumber, setPageNumber] = useState(0);
+  
+  const projectsPerPage = 6;
+  const pagesVisited = pageNumber * projectsPerPage;
+  
+
+  const displayProjects = frondEnd
+    .slice(pagesVisited, pagesVisited + projectsPerPage)
+    .map((project, index) => {
+      return (
+        <ProjectCard 
+        key={ index }
+        { ...project }
+        />
+      )
+    });
+
+  const pageCount = Math.ceil(frondEnd.length / projectsPerPage);
+
+  const changePage = ({selected}) => { 
+    setPageNumber(selected)
+  }
   return (
     <section className='project' id='projects'>
       <Container>
@@ -30,7 +54,10 @@ export const Projects = () => {
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <div className='cards-container'>
-
+                    {displayProjects}
+                    <ReactPaginate previousLabel={"<"} nextLabel={">"} pageCount={pageCount}
+                    onPageChange={changePage} containerClassName={"paginationBtns"}
+                    previousClassName={"previousBtn"} nextClassName={"nextBtn"} disabledClassName={"paginationDesabled"} activeClassName={"paginationActive"}/>
                   </div>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">Lorem Impsut</Tab.Pane>

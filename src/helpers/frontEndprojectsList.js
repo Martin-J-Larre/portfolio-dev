@@ -108,5 +108,89 @@ export const frontEndprojectsList = [
     imgUrl: projImg4,
     gitHubUrl:"https://github.com/Martin-J-Larre/test-2-heroku",
     demoUrl:"https://github.com/Martin-J-Larre/test-2-heroku"
+  },
+  {
+    title: "Landing page",
+    description: "Html, css, Javascript",
+    imgUrl: projImg1,
+    gitHubUrl:"https://github.com/Martin-J-Larre/test-2-heroku",
+    demoUrl:"https://github.com/Martin-J-Larre/test-2-heroku"
+  },
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg2,
+    gitHubUrl:"https://github.com/Martin-J-Larre/test-2-heroku",
+    demoUrl:"https://github.com/Martin-J-Larre/test-2-heroku"
+  },
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg3,
+    gitHubUrl:"https://github.com/Martin-J-Larre/test-2-heroku",
+    demoUrl:"https://github.com/Martin-J-Larre/test-2-heroku"
+  },
+  {
+    title: "Landing page",
+    description: "Html, css, Javascript",
+    imgUrl: projImg1,
+    gitHubUrl:"https://github.com/Martin-J-Larre/test-2-heroku",
+    demoUrl:"https://github.com/Martin-J-Larre/test-2-heroku"
+  },
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg2,
+    gitHubUrl:"https://github.com/Martin-J-Larre/test-2-heroku",
+    demoUrl:"https://github.com/Martin-J-Larre/test-2-heroku"
+  },
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg3,
+    gitHubUrl:"https://github.com/Martin-J-Larre/test-2-heroku",
+    demoUrl:"https://github.com/Martin-J-Larre/test-2-heroku"
+  },
+  {
+    title: "Landing page",
+    description: "Html, css, Javascript",
+    imgUrl: projImg1,
+    gitHubUrl:"https://github.com/Martin-J-Larre/test-2-heroku",
+    demoUrl:"https://github.com/Martin-J-Larre/test-2-heroku"
+  },
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg2,
+    gitHubUrl:"https://github.com/Martin-J-Larre/test-2-heroku",
+    demoUrl:"https://github.com/Martin-J-Larre/test-2-heroku"
+  },
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg3,
+    gitHubUrl:"https://github.com/Martin-J-Larre/test-2-heroku",
+    demoUrl:"https://github.com/Martin-J-Larre/test-2-heroku"
+  },
+  {
+    title: "Landing page",
+    description: "Html, css, Javascript",
+    imgUrl: projImg1,
+    gitHubUrl:"https://github.com/Martin-J-Larre/test-2-heroku",
+    demoUrl:"https://github.com/Martin-J-Larre/test-2-heroku"
+  },
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg2,
+    gitHubUrl:"https://github.com/Martin-J-Larre/test-2-heroku",
+    demoUrl:"https://github.com/Martin-J-Larre/test-2-heroku"
+  },
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    imgUrl: projImg3,
+    gitHubUrl:"https://github.com/Martin-J-Larre/test-2-heroku",
+    demoUrl:"https://github.com/Martin-J-Larre/test-2-heroku"
   }
 ];
