@@ -108,6 +108,7 @@
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .paginationBtns a{
   padding: 5px 10px;

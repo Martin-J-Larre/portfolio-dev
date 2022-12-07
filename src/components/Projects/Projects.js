@@ -1,20 +1,47 @@
 import { useState } from "react";
 import { Container, Col, Row, Nav, Tab, Button } from 'react-bootstrap';
 import ReactPaginate from 'react-paginate';
-import { frontEndprojectsList } from '../../helpers/frontEndprojectsList';
+import { projectsListFront } from '../../helpers/projectsListFront';
+import { projectsListBack } from '../../helpers/projectsListBack';
+import { projectsListFullstack } from '../../helpers/projectsListBackFullstack';
 import { ProjectCard } from '../ProjectCard/ProjectCard';
 import './projects.css';
 
 export const Projects = () => {
-  const [frondEnd, setFrondEnd] = useState(frontEndprojectsList);
-  const [pageNumber, setPageNumber] = useState(0);
+  const [projectsFront, setProjectsFront] = useState(projectsListFront);
+  const [projectsBack, setProjectsBack] = useState(projectsListBack);
+  const [projectsFullstack, setProjectsFullstack] = useState(projectsListFullstack);
+  const [pageNumberFront, setPageNumberFront] = useState(0);
+  const [pageNumberBack, setPageNumberBack] = useState(0);
+  const [pageNumberFullstack, setPageNumberFullstack] = useState(0);
   
   const projectsPerPage = 6;
-  const pagesVisited = pageNumber * projectsPerPage;
+  const pagesVisitedFront = pageNumberFront * projectsPerPage;
+  const pagesVisitedBack = pageNumberBack * projectsPerPage;
+  const pagesVisitedFullstack = pageNumberFullstack * projectsPerPage;
   
-
-  const displayProjects = frondEnd
-    .slice(pagesVisited, pagesVisited + projectsPerPage)
+  const displayProjectsFront = projectsFront
+    .slice(pagesVisitedFront, pagesVisitedFront + projectsPerPage)
+    .map((project, index) => {
+      return (
+        <ProjectCard 
+        key={ index }
+        { ...project }
+        />
+      )
+    });
+  const displayProjectsBack = projectsBack
+    .slice(pagesVisitedBack, pagesVisitedBack + projectsPerPage)
+    .map((project, index) => {
+      return (
+        <ProjectCard 
+        key={ index }
+        { ...project }
+        />
+      )
+    });
+  const displayProjectsFullstack = projectsFullstack
+    .slice(pagesVisitedFullstack, pagesVisitedFullstack + projectsPerPage)
     .map((project, index) => {
       return (
         <ProjectCard 
@@ -24,10 +51,18 @@ export const Projects = () => {
       )
     });
 
-  const pageCount = Math.ceil(frondEnd.length / projectsPerPage);
+  const pageCountFront = Math.ceil(projectsFront.length / projectsPerPage);
+  const pageCountBack = Math.ceil(projectsBack.length / projectsPerPage);
+  const pageCountFullstack = Math.ceil(projectsFullstack.length / projectsPerPage);
 
-  const changePage = ({selected}) => { 
-    setPageNumber(selected)
+  const changePageFront = ({selected}) => { 
+    setPageNumberFront(selected)
+  }
+  const changePageBack = ({selected}) => { 
+    setPageNumberBack(selected)
+  }
+  const changePageFullstack = ({selected}) => { 
+    setPageNumberFullstack(selected)
   }
   return (
     <section className='project' id='projects'>
@@ -54,14 +89,28 @@ export const Projects = () => {
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <div className='cards-container'>
-                    {displayProjects}
-                    <ReactPaginate previousLabel={"<"} nextLabel={">"} pageCount={pageCount}
-                    onPageChange={changePage} containerClassName={"paginationBtns"}
+                    {displayProjectsFront}
+                    <ReactPaginate previousLabel={"<"} nextLabel={">"} pageCount={pageCountFront}
+                    onPageChange={changePageFront} containerClassName={"paginationBtns"}
                     previousClassName={"previousBtn"} nextClassName={"nextBtn"} disabledClassName={"paginationDesabled"} activeClassName={"paginationActive"}/>
                   </div>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">Lorem Impsut</Tab.Pane>
-                <Tab.Pane eventKey="third">Lorem Impsut</Tab.Pane>
+                <Tab.Pane eventKey="second">
+                <div className='cards-container'>
+                    {displayProjectsBack}
+                    <ReactPaginate previousLabel={"<"} nextLabel={">"} pageCount={pageCountBack}
+                    onPageChange={changePageBack} containerClassName={"paginationBtns"}
+                    previousClassName={"previousBtn"} nextClassName={"nextBtn"} disabledClassName={"paginationDesabled"} activeClassName={"paginationActive"}/>
+                  </div>
+                </Tab.Pane>
+                <Tab.Pane eventKey="third">
+                <div className='cards-container'>
+                    {displayProjectsFullstack}
+                    <ReactPaginate previousLabel={"<"} nextLabel={">"} pageCount={pageCountFullstack}
+                    onPageChange={changePageFullstack} containerClassName={"paginationBtns"}
+                    previousClassName={"previousBtn"} nextClassName={"nextBtn"} disabledClassName={"paginationDesabled"} activeClassName={"paginationActive"}/>
+                  </div>
+                </Tab.Pane>
                 {/* <Tab.Pane eventKey="fourth">Lorem Impsut</Tab.Pane> */}
               </Tab.Content>
             </Tab.Container>
