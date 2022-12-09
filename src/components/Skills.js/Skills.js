@@ -43,7 +43,7 @@ export const Skills = () => {
                       return (
                         <div key={index}>
                           <div className="item">
-                            <DevIcon className="techIcons" icon={tech.iconName || tech.iconImg } />
+                            <DevIcon className="techIcons" icon={tech.iconName } />
                           </div>
                           <h5 className="tech-name">{tech.name}</h5>
                         </div>

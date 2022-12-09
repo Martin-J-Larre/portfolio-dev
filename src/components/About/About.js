@@ -55,6 +55,14 @@ export const About = () => {
                     <Col xs={ 12 } md={ 6 } xl={ 5 }>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, obcaecati. Corrupti cupiditate maiores repudiandae officiis nesciunt laudantium dolorem quae vero.</p>
                     </Col>
+                    <Col>
+                      <a href="tecnicatura-programacion-tramite"
+                         download="tecnicatura-programacion-tramite.pdf">
+                        <button className="download-btn">
+                          Download My Resume
+                        </button>
+                      </a>
+                    </Col>
                 </Row>
                 </div>
             </Container>

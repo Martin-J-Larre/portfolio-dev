@@ -44,3 +44,18 @@
   width: 40%;
   z-index: -4;
 }
+.download-btn{
+  font-size: 14px;
+  font-weight: 600;
+  background: transparent;
+  color: #fff;
+  opacity: 0.75;
+  border: solid 1px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.download-btn:hover{
+  color: #000;
+  background-color: #fff;
+  opacity: 1;
+}

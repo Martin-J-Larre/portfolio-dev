@@ -1,9 +1,9 @@
-import express from '../assets/img/express.svg'
+import { SiExpress } from 'react-icons/si';
 
 export const techSkills = [
   {
     name: 'HTML 5',
-    iconName: 'html5'
+    iconName: "devicon-html5-plain"
   },
   {
     name: 'CSS3',
@@ -35,8 +35,7 @@ export const techSkills = [
   },
   {
     name: 'Express JS',
-    iconName: 'express',
-    iconImg: express
+    iconName: '<SiExpress />' ,
   },
   {
     name: 'Node JS',
