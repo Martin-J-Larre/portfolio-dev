@@ -1,9 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { techSkills } from '../../helpers/techSkills';
+import { techSkills2 } from '../../helpers/techSkills2';
 import './skills.css';
-import DevIcon from "devicon-react-svg";
 import colorSharp2 from '../../assets/img/color-sharp2.png';
 
 export const Skills = () => {
@@ -39,11 +38,11 @@ export const Skills = () => {
               <Carousel responsive={ responsive } infinite={ true } className="skill-slider">
                 
                   {
-                    techSkills.map((tech, index) => {
+                    techSkills2.map((tech, index) => {
                       return (
                         <div key={index}>
                           <div className="item">
-                            <DevIcon className="techIcons" icon={tech.iconName } />
+                            <img src={tech.iconImg} className="techIcons"/>
                           </div>
                           <h5 className="tech-name">{tech.name}</h5>
                         </div>

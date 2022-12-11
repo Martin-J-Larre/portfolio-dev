@@ -46,7 +46,7 @@
   align-items: center;
 }
 .skill-slider .item .techIcons {
-  height: 80px;
+  width: 70%;
 }
 .tech-name{
   margin-top: 5px;
