@@ -56,7 +56,7 @@ export const About = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, obcaecati. Corrupti cupiditate maiores repudiandae officiis nesciunt laudantium dolorem quae vero.</p>
                     </Col>
                     <Col>
-                      <a href="tecnicatura-programacion-tramite"
+                      <a href="tecnicatura-programacion-tramite.pdf"
                          download="tecnicatura-programacion-tramite.pdf">
                         <button className="download-btn">
                           Download My Resume
