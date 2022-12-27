@@ -6,8 +6,13 @@
     "projects":"Projectos",
     "contact":"Contacto"
   },
-  "about":{
+  "home":{
     "title": "MARTIN J. LARRE",
     "subtitle": "DESARROLLO WEB"
+  },
+  "about":{
+    "title": "Sobre Mi",
+    "text": "",
+    "resume":"Descargar Mi CV"
   }
 }

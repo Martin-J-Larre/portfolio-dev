@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { useTranslation } from 'react-i18next';
 import colorSharp from "../../assets/img/color-sharp.png";
 import "./about.css";
 
 export const About = () => {
+  const [t, i18n] = useTranslation('global');
   const [loopNum, setLoopNum] = useState(0); //
   const [isDeleting, setIsDeleting] = useState(false); //
   const [text, setText] = useState('');//
@@ -45,7 +47,7 @@ export const About = () => {
         <section className="about" id="about">
             <Container>
                 <div className="about--box">
-                    <h2>About Me</h2>
+                    <h2>{t("about.title")}</h2>
                 
                 <Row className='aling-items-center'>
                     <Col xs={ 12 } md={ 6 } xl={ 7 }>
@@ -59,7 +61,7 @@ export const About = () => {
                       <a href="tecnicatura-programacion-tramite.pdf"
                          download="tecnicatura-programacion-tramite.pdf">
                         <button className="download-btn">
-                          Download My Resume
+                        {t("about.resume")}
                         </button>
                       </a>
                     </Col>

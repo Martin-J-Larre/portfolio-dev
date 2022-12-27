@@ -10,8 +10,8 @@ export const Home = () => {
       <Container>
         <Row className='aling-items-center neon'>
             <div className="neon-wrapper">
-              <h1 className="neon-text">{t("about.title")}</h1>
-              <h2 className="neon-text">{t("about.subtitle")}</h2>
+              <h1 className="neon-text">{t("home.title")}</h1>
+              <h2 className="neon-text">{t("home.subtitle")}</h2>
             </div>
         </Row>
       </Container>
