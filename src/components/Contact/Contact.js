@@ -15,6 +15,7 @@ export const Contact = () => {
     const [t, i18n] = useTranslation('global');
     const [formDetails, setFormDetails] = useState(formInitialDetails);
     const [buttonText, setButtonText] = useState("Send");
+    const [buttonText2, setButtonText2] = useState("Enviar");
     const [status, setStatus] = useState({});
 
 
@@ -28,6 +29,7 @@ export const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setButtonText('Sending...');
+        setButtonText2('Enviando...');
         let response = await fetch("http://localhost:5000/contact", {
             method: "POST",
             headers: {
@@ -36,6 +38,7 @@ export const Contact = () => {
             body: JSON.stringify(formDetails),
         });
         setButtonText('Send');
+        setButtonText2('Enviar');
         let result = await response.json();;
         setFormDetails(formInitialDetails);
         if (result.code == 200) {
@@ -129,7 +132,8 @@ export const Contact = () => {
                                 <Col>
                                 <button type="submit">
                                         <span>
-                                            {buttonText}</span>
+                                            { t("contact.send") === "Send" ? buttonText : buttonText2 }
+                                        </span>
                                 </button>
                                 </Col>
                                 <Col>
