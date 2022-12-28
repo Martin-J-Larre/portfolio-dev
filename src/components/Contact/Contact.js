@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { useTranslation } from 'react-i18next';
 import "./contact.css";
 
 export const Contact = () => {
@@ -11,10 +12,11 @@ export const Contact = () => {
         message: ''
     };
 
+    const [t, i18n] = useTranslation('global');
     const [formDetails, setFormDetails] = useState(formInitialDetails);
-    const [buttonText, setButtonText] = useState('Send');
+    const [buttonText, setButtonText] = useState("Send");
     const [status, setStatus] = useState({});
-    
+
 
     const onFormUpdate = (category, value) => {
         setFormDetails({
@@ -49,7 +51,7 @@ export const Contact = () => {
         <section className="contact" id="contact">
             <Container>
                 <Row className="align-items-center">
-                        <h2>Contact</h2>
+                        <h2>{t("contact.title")}</h2>
                         <form onSubmit={handleSubmit}>
                             <Row>
                                 <Col sm={6}>
@@ -57,7 +59,7 @@ export const Contact = () => {
                                         required="required"
                                         type="text"
                                         value={formDetails.firstName}
-                                        placeholder="First Name"
+                                        placeholder= {t("contact.name")}
                                         onChange={(e) =>
                                             onFormUpdate(
                                                 "firstName",
@@ -71,7 +73,7 @@ export const Contact = () => {
                                         required="required"
                                         type="text"
                                         value={formDetails.lastName}
-                                        placeholder="Last Name"
+                                        placeholder={t("contact.lastName")}
                                         onChange={(e) =>
                                             onFormUpdate(
                                                 "lastName",
@@ -85,7 +87,7 @@ export const Contact = () => {
                                         required="required"
                                         type="email"
                                         value={formDetails.email}
-                                        placeholder="Email Address"
+                                        placeholder= {t("contact.email")}
                                         onChange={(e) =>
                                             onFormUpdate(
                                                 "email",
@@ -99,7 +101,7 @@ export const Contact = () => {
                                         required="required"
                                         type="tel"
                                         value={formDetails.phone}
-                                        placeholder="Phone"
+                                        placeholder= {t("contact.phone")}
                                         onChange={(e) =>
                                             onFormUpdate(
                                                 "phone",
@@ -113,7 +115,7 @@ export const Contact = () => {
                                         required="required"
                                         row="6"
                                         value={formDetails.message}
-                                        placeholder="Message"
+                                        placeholder= {t("contact.message")}
                                         onChange={(e) =>
                                             onFormUpdate(
                                                 "message",
@@ -126,7 +128,8 @@ export const Contact = () => {
                             <Row>
                                 <Col>
                                 <button type="submit">
-                                        <span>{buttonText}</span>
+                                        <span>
+                                            {buttonText}</span>
                                 </button>
                                 </Col>
                                 <Col>

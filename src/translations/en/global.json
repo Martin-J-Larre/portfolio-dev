@@ -14,5 +14,18 @@
     "title": "About Me",
     "text": "",
     "resume":"Download My Resume"
+  },
+  "projects":{
+    "title": "Projects",
+    "text": ""
+  },
+  "contact":{
+    "title": "Contact",
+    "name": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send"
   }
 }

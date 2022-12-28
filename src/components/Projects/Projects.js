@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Container, Col, Row, Nav, Tab, Button } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 import ReactPaginate from 'react-paginate';
 import { projectsListFront } from '../../helpers/projectsListFront';
 import { projectsListBack } from '../../helpers/projectsListBack';
@@ -8,6 +9,7 @@ import { ProjectCard } from '../ProjectCard/ProjectCard';
 import './projects.css';
 
 export const Projects = () => {
+  const [t, i18n] = useTranslation('global');
   const [projectsFront, setProjectsFront] = useState(projectsListFront);
   const [projectsBack, setProjectsBack] = useState(projectsListBack);
   const [projectsFullstack, setProjectsFullstack] = useState(projectsListFullstack);
@@ -69,7 +71,7 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col>
-            <h2>Projects</h2>
+            <h2>{t("projects.title")}</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, obcaecati. Corrupti cupiditate maiores repudiandae officiis nesciunt laudantium dolorem quae vero.</p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav variant="pills" className='nav-pills mb-5 justify-content-center align-items-center' id='pills-tab'>

@@ -14,5 +14,17 @@
     "title": "Sobre Mi",
     "text": "",
     "resume":"Descargar Mi CV"
+  },
+  "projects":{
+    "title": "Proyectos",
+    "text": ""
+  },
+  "contact":{
+    "title": "Contacto",
+    "name": "Nombre",
+    "lastName": "Apellido",
+    "email": "Email",
+    "phone": "Tel",
+    "message": "Mensaje"
   }
 }
