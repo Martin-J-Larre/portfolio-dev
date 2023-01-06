@@ -1,12 +1,15 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { useTranslation } from 'react-i18next';
 
 import { techSkills2 } from '../../helpers/techSkills2';
 import './skills.css';
 import colorSharp2 from '../../assets/img/color-sharp2.png';
 
 export const Skills = () => {
+  const [t, i18n] = useTranslation('global');
+
   const responsive = {
     largeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -34,8 +37,7 @@ export const Skills = () => {
               <h2>
                 Skills
               </h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, obcaecati. Corrupti cupiditate maiores repudiandae officiis nesciunt laudantium dolorem quae vero.</p>
-              {/* <Carousel responsive={ responsive } infinite={ true } autoPlay={ true } autoPlaySpeed={2000} className="skill-slider"> */}
+              <p>{t("skills.text")}</p>
               <Carousel 
                 responsive={ responsive } 
                 infinite={ true } 

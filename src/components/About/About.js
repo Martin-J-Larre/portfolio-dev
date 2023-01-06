@@ -49,17 +49,19 @@ export const About = () => {
                 <div className="about--box">
                     <h2>{t("about.title")}</h2>
                 
-                <Row className='aling-items-center'>
-                    <Col xs={ 12 } md={ 6 } xl={ 7 }>
-                      <h3>{`I'm a... `}</h3>
+                <Row>
+                    <Col xs={ 12 } md={ 6 } xl={ 6 } className='aling-items-center'>
+                      <h3>{t("about.iam")}</h3>
                       <h3><span className='wrap'>{text}</span></h3>
                     </Col>
-                    <Col xs={ 12 } md={ 6 } xl={ 5 }>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, obcaecati. Corrupti cupiditate maiores repudiandae officiis nesciunt laudantium dolorem quae vero.</p>
+                    <Col xs={ 12 } md={ 6 } xl={ 6 }>
+                    <p> {t("about.text1")}</p>
+                    <p> {t("about.text2")}</p>
+                    <p> {t("about.text3")}</p>
                     </Col>
                     <Col>
-                      <a href="tecnicatura-programacion-tramite.pdf"
-                         download="tecnicatura-programacion-tramite.pdf">
+                      <a  href="tecnicatura-programacion-tramite.pdf"
+                          download="tecnicatura-programacion-tramite.pdf">
                         <button className="download-btn">
                         {t("about.resume")}
                         </button>

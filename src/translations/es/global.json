@@ -12,11 +12,15 @@
   },
   "about":{
     "title": "Sobre Mi",
+    "iam": " Yo soy un ...",
     "text": "",
     "resume":"Descargar Mi CV"
   },
   "projects":{
     "title": "Proyectos",
+    "text": ""
+  },
+  "skills":{
     "text": ""
   },
   "contact":{
