@@ -13,7 +13,7 @@
   "about":{
     "title": "About Me",
     "iam": "I'm a...",
-    "text1": "Hi, I'm Martin. I'm a developer from Buenos Aires, Argentina and I'm based in New York.",
+    "text1": "Hi, I'm Martin. I'm a web developer from Buenos Aires, Argentina and I'm based in New York.",
     "text2": "I spent over a decade in another industry before I decided to follow my interests and transition to web development during the pandemic. I've received an associate degree in programming and completed various courses, including a full stack certification course at a coding academy.",
     "text3": "I'm passionate about user experience and improving my coding skills. I look forward to working for a company where I can continue to learn and grow as a developer.",
     "resume":"Download My Resume"
@@ -23,7 +23,7 @@
   },
   "projects":{
     "title": "Projects",
-    "text": ""
+    "text": "These are projects I've worked on to improve my skills with the technologies that I'm using. For frontend projects there are static with vanilla JavaScript and with React. For backend there are REST APIs with nodeJS and for full stack there are MERN stack projects."
   },
   "contact":{
     "title": "Contact",

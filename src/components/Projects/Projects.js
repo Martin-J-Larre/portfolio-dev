@@ -72,7 +72,7 @@ export const Projects = () => {
         <Row>
           <Col>
             <h2>{t("projects.title")}</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, obcaecati. Corrupti cupiditate maiores repudiandae officiis nesciunt laudantium dolorem quae vero.</p>
+            <p>{t("projects.text")}</p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav variant="pills" className='nav-pills mb-5 justify-content-center align-items-center' id='pills-tab'>
                 <Nav.Item>
