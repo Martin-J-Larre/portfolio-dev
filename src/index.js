@@ -12,6 +12,7 @@ i18next.init({
     escapeValue: false
   },
   lng: 'en',
+  // lng: localStorage.getItem("lng") || 'en',
   resources: {
     es: {
       global: global_es

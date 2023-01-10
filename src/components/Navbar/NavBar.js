@@ -29,9 +29,14 @@ export const NavBar = () => {
         setActiveLink(value);
     };
 
+
     const onChange = (event) => {
       i18n.changeLanguage(event.target.value);
+      // localStorage.setItem("lng", event.target.value);
+			// Select ---> option came back to English while it is on "es" in localStorage
     };
+
+		
     return (
         <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
             <Container>
