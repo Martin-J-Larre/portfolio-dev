@@ -70,8 +70,35 @@
 }
 
 @media (max-width: 375px){
+  .about--box {
+    padding: 0 5px 5px 20px;
+    margin-bottom: 0;
+  }
+  .about--box h2 {
+    font-size: 30px;
+    font-weight: 400;
+    opacity: 0.75;
+    margin-bottom: 30px;
+  }
+  .about--box h2 {
+    padding-top: 70px;
+    margin-bottom: 20px;
+  }
+  .about p {
+    margin-bottom: 0;
+  }
+  
+  .background-image-left {
+    display: none;
+  }
+  .download-btn{
+    margin-top: 25px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+  }
   .display{
     display: none;
   }
+  
 }
   

@@ -89,11 +89,12 @@ nav.navbar .navbar-toggler:focus {
 
 @media (max-width: 375px){
   nav.navbar{
+    padding: 10px 0;
     background-color: rgba(18, 18, 18, .9);
     z-index: 10000;
   }
   nav.navbar.scrolled {
-    padding: 15px 0;
+    padding: 10px 0;
     background-color:  rgba(18, 18, 18, .9);
   }
   nav.navbar .navbar-nav .nav-link.navbar-link {
