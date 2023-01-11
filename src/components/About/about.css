@@ -68,3 +68,10 @@
   background-color: #fff;
   opacity: 1;
 }
+
+@media (max-width: 375px){
+  .display{
+    display: none;
+  }
+}
+  

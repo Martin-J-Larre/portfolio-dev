@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
 ::-webkit-scrollbar{
   width: 8px;
 }
@@ -13,10 +17,6 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255,255,255,0.50); 
-}
-html{
-  scroll-behavior: smooth;
-  scroll-padding-top: 75px;
 }
 
 body{
@@ -32,4 +32,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
+}
+@media (max-width: 375px){
+  html{
+    scroll-behavior: auto;
+    scroll-padding-top: 0;
+  }
 }

@@ -50,7 +50,7 @@ export const About = () => {
                     <h2>{t("about.title")}</h2>
                 
                 <Row>
-                    <Col xs={ 12 } md={ 6 } xl={ 6 } className='aling-items-center'>
+                    <Col xs={ 12 } md={ 6 } xl={ 6 } className='aling-items-center display'>
                       <h3>{t("about.iam")}</h3>
                       <h3><span className='wrap'>{text}</span></h3>
                     </Col>

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import "./navbar.css";
 import navIcon1 from "../../assets/img/nav-icon1.svg";
 import navIcon3 from "../../assets/img/nav-icon3.svg";
+import { BsList } from "react-icons/bs";
 
 export const NavBar = () => {
     const [t, i18n] = useTranslation('global');
@@ -25,8 +26,18 @@ export const NavBar = () => {
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
 
+    const closeNav = () => { 
+        if (window.innerWidth < 767) {
+            const navElemt1 = document.querySelector('.navbar-toggler');
+            const navElemt2 = document.querySelector('.navbar-collapse');
+            navElemt1.classList.add('collapsed');
+            navElemt2.classList.remove('show');
+        }
+    }
+
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
+        closeNav()
     };
 
 
@@ -41,7 +52,7 @@ export const NavBar = () => {
         <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
             <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
-                    <span className="navbar-toggler-icon"></span>
+                    <BsList className="hamburger-nav" />
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <span className="navbar-lang">
