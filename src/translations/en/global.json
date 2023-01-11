@@ -1,7 +1,7 @@
 {
   "nav":{
     "home":"Home",
-    "about":"About Me",
+    "about":"About me",
     "skills":"Skills",
     "projects":"Projects",
     "contact":"Contact"
@@ -11,12 +11,12 @@
     "subtitle": "WEB DEVELOPMENT"
   },
   "about":{
-    "title": "About Me",
+    "title": "About me",
     "iam": "I'm a...",
     "text1": "Hi, I'm Martin. I'm a web developer from Buenos Aires, Argentina and I'm based in New York.",
     "text2": "I spent over a decade in another industry before I decided to follow my interests and transition to web development during the pandemic. I've received an associate degree in programming and completed various courses, including a full stack certification course at a coding academy.",
     "text3": "I'm passionate about user experience and improving my coding skills. I look forward to working for a company where I can continue to learn and grow as a developer.",
-    "resume":"Download My Resume"
+    "resume":"Download my resume"
   },
   "skills":{
     "text": "Here are the technologies that I've learned and used for my projects. I'm looking forward to learning more technologies."
@@ -27,9 +27,9 @@
   },
   "contact":{
     "title": "Contact",
-    "name": "First Name",
-    "lastName": "Last Name",
-    "email": "Email Address",
+    "name": "First name",
+    "lastName": "Last name",
+    "email": "Email address",
     "phone": "Phone",
     "message": "Message",
     "send": "Send"

@@ -82,7 +82,7 @@ export const Projects = () => {
                   <Nav.Link eventKey="second" href="#main-2">Backend</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third" href="#main-3">Full Stack</Nav.Link>
+                  <Nav.Link eventKey="third" href="#main-3">Full stack</Nav.Link>
                 </Nav.Item>
                 {/* <Nav.Item>
                   <Nav.Link eventKey="fourth" href="#main">UX/UI</Nav.Link>

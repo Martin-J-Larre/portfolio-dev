@@ -1,7 +1,7 @@
 {
   "nav":{
     "home":"Inicio",
-    "about":"Sobre Mi",
+    "about":"Sobre mi",
     "skills":"Skills",
     "projects":"Projectos",
     "contact":"Contacto"
@@ -11,12 +11,12 @@
     "subtitle": "DESARROLLO WEB"
   },
   "about":{
-    "title": "Sobre Mi",
+    "title": "Sobre mi",
     "iam": " Yo soy un ...",
     "text1": "Hola, Yo soy Martin. Yo soy un desarrollador web de Buenos Aires, Argentina *pero* establecido en Nueva York.",
     "text2": "Despues de mas de una decada dedicandome a otra industria, decidi seguir mis intereses personales, estudiando programacion y desarrollo web durante la pandemia. Me gradue como Tecnico superior en programacion y complete varios cursos entre ellos una certificacion Desarrollo Full Stack en una academia digital.",
     "text3": "Soy un apasionado por la tecnologia y continuar mejorando mis habilidades en el desarrollo web. Estoy buscando con ansias una campania donde pueda sumar, seguir aprendiendo y crecer.",
-    "resume":"Descargar Mi CV"
+    "resume":"Descargar mi CV"
   },
   "projects":{
     "title": "Proyectos",

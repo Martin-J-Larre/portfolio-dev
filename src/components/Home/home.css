@@ -44,4 +44,20 @@
   font-size: 3rem;
 }
 
+@media (max-width: 375px){
+  .home {
+    height: 100vh;
+    padding:30px 10px;
+  }
+  
+  .neon-wrapper {
+    padding: 15px;
+  }
+  .neon-text{
+    font-size: 2.5rem;
+    }
+  .neon-wrapper h2{
+    font-size: 2rem;
+  }
+}
   
