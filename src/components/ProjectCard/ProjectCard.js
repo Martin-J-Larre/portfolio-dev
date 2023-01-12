@@ -1,7 +1,11 @@
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaWindowClose } from 'react-icons/fa';
 import './projectCard.css'
 
 export const ProjectCard = ({ imgUrl, title, description, gitHubUrl, demoUrl }) => {
+    const widthScreen = window.innerWidth;
+
+
+    
     return (
         <div className="proj-imgbx">
             <img src={imgUrl} />

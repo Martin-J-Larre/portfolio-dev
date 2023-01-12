@@ -87,7 +87,7 @@ nav.navbar .navbar-toggler:focus {
   color: #fff;;
 }
 
-@media (max-width: 375px){
+@media (max-width: 420px){
   nav.navbar{
     padding: 10px 0;
     background-color: rgba(18, 18, 18, .9);

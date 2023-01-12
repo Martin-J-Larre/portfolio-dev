@@ -2,7 +2,7 @@
   padding: 10px 0;
   margin-top: 100px;
   position: relative;
-  background-color: #131313;
+  background: #151515;
 }
 .project h2 {
   text-align: center;
@@ -125,4 +125,18 @@
 }
 .paginationActive a{
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 420px){
+  .project h2 {
+    padding-top: 70px;
+  }
+  .project p {
+    width: 90%;
+    margin: 30 auto;
+    text-align: start;
+  }
+  .project .nav.nav-pills {
+    width: 100%;
+  }
 }

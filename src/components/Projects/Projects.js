@@ -17,7 +17,7 @@ export const Projects = () => {
   const [pageNumberBack, setPageNumberBack] = useState(0);
   const [pageNumberFullstack, setPageNumberFullstack] = useState(0);
   
-  const projectsPerPage = 6;
+  let projectsPerPage = 6;
   const pagesVisitedFront = pageNumberFront * projectsPerPage;
   const pagesVisitedBack = pageNumberBack * projectsPerPage;
   const pagesVisitedFullstack = pageNumberFullstack * projectsPerPage;
@@ -66,6 +66,7 @@ export const Projects = () => {
   const changePageFullstack = ({selected}) => { 
     setPageNumberFullstack(selected)
   }
+
   return (
     <section className='project' id='projects'>
       <Container>
@@ -76,13 +77,13 @@ export const Projects = () => {
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav variant="pills" className='nav-pills mb-5 justify-content-center align-items-center' id='pills-tab'>
                 <Nav.Item>
-                  <Nav.Link eventKey="first" href="#main">Frontend</Nav.Link>
+                  <Nav.Link eventKey="first">Frontend</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second" href="#main-2">Backend</Nav.Link>
+                  <Nav.Link eventKey="second">Backend</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third" href="#main-3">Full stack</Nav.Link>
+                  <Nav.Link eventKey="third">Full stack</Nav.Link>
                 </Nav.Item>
                 {/* <Nav.Item>
                   <Nav.Link eventKey="fourth" href="#main">UX/UI</Nav.Link>
@@ -90,7 +91,7 @@ export const Projects = () => {
               </Nav>
               <Tab.Content>
                 <Tab.Pane eventKey="first">
-                  <div className='cards-container' id="main">
+                  <div className='cards-container'>
                     {displayProjectsFront}
                     <ReactPaginate previousLabel={"<"} nextLabel={">"} pageCount={pageCountFront}
                     onPageChange={changePageFront} containerClassName={"paginationBtns"}
@@ -98,7 +99,7 @@ export const Projects = () => {
                   </div>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
-                <div className='cards-container' id="main-2">
+                <div className='cards-container'>
                     {displayProjectsBack}
                     <ReactPaginate previousLabel={"<"} nextLabel={">"} pageCount={pageCountBack}
                     onPageChange={changePageBack} containerClassName={"paginationBtns"}
@@ -106,7 +107,7 @@ export const Projects = () => {
                   </div>
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
-                <div className='cards-container' id="main-3">
+                <div className='cards-container'>
                     {displayProjectsFullstack}
                     <ReactPaginate previousLabel={"<"} nextLabel={">"} pageCount={pageCountFullstack}
                     onPageChange={changePageFullstack} containerClassName={"paginationBtns"}

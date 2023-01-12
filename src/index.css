@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   line-height: normal;
 }
-@media (max-width: 375px){
+@media (max-width: 420px){
   html{
     scroll-behavior: auto;
     scroll-padding-top: 0;

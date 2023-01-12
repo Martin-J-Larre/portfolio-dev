@@ -84,3 +84,20 @@
 .contact form button:hover::before {
   width: 100%;
 }
+
+@media (max-width: 420px){
+  .contact {
+    height: 100vh;
+  }
+  .contact h2 {
+    margin-top: 70px;
+  }
+  .contact form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  .contact form textarea {
+    height: 90px;
+  }
+}

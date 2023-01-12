@@ -69,8 +69,9 @@
   opacity: 1;
 }
 
-@media (max-width: 375px){
+@media (max-width: 420px){
   .about--box {
+    background-color: #151515;
     padding: 0 5px 5px 20px;
     margin-bottom: 0;
   }
