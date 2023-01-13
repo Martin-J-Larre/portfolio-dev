@@ -79,12 +79,10 @@
     font-size: 30px;
     font-weight: 400;
     opacity: 0.75;
-    margin-bottom: 30px;
-  }
-  .about--box h2 {
     padding-top: 70px;
     margin-bottom: 20px;
   }
+
   .about p {
     margin-bottom: 0;
   }
@@ -102,4 +100,26 @@
   }
   
 }
+@media (max-width: 768px){
+  .about {
+    padding:0;
+    display: flex;
+    justify-content: center;
+  }
+  .about--box h2 {
+    padding-top: 30px;
+  }
   
+  .download-btn{
+    margin: 20px;
+ 
+  }
+  .download-btn:hover{
+    color: #000;
+    background-color: #fff;
+    opacity: 1;
+  }
+  .display{
+    display: none;
+  }
+}  

@@ -8,9 +8,10 @@ import { BsList } from "react-icons/bs";
 
 export const NavBar = () => {
     const [t, i18n] = useTranslation('global');
-
     const [activeLink, setActiveLink] = useState("home");
     const [scrolled, setScrolled] = useState(false);
+
+    let WidthScreen = window.innerWidth;
 
     useEffect(() => {
         const onScroll = () => {
@@ -27,7 +28,7 @@ export const NavBar = () => {
     }, []);
 
     const closeNav = () => { 
-        if (window.innerWidth < 767) {
+        if (WidthScreen < 768) {
             const navElemt1 = document.querySelector('.navbar-toggler');
             const navElemt2 = document.querySelector('.navbar-collapse');
             navElemt1.classList.add('collapsed');
@@ -39,12 +40,11 @@ export const NavBar = () => {
         setActiveLink(value);
         closeNav()
     };
-
+    
 
     const onChange = (event) => {
       i18n.changeLanguage(event.target.value);
-      // localStorage.setItem("lng", event.target.value);
-			// Select ---> option came back to English while it is on "es" in localStorage
+    //   localStorage.setItem("lng", event.target.value);
     };
 
 		
@@ -52,9 +52,9 @@ export const NavBar = () => {
         <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
             <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
-                    <BsList className="hamburger-nav" />
+                    <BsList className="hamburger-nav"/>
                 </Navbar.Toggle>
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Collapse id="basic-navbar-nav" className="nav-collapsed">
                     <span className="navbar-lang">
                         <div className="language">
                             <select name="language" onChange={onChange}>
