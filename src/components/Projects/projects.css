@@ -127,16 +127,32 @@
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-@media (max-width: 420px){
-  .project h2 {
-    padding-top: 70px;
+@media (max-width: 1024px){
+  .project {
+    display: flex;
+    justify-content: center;
   }
   .project p {
-    width: 90%;
+    width: 80%;
     margin: 30 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px){
+  .project p {
+    width: 90%;
     text-align: start;
   }
   .project .nav.nav-pills {
     width: 100%;
   }
 }
+
+@media (max-width: 420px){
+  .project h2 {
+    padding-top: 70px;
+  }
+}
+
+

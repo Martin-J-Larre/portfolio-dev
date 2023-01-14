@@ -43,7 +43,21 @@
 .neon-wrapper h2{
   font-size: 3rem;
 }
-
+@media (max-width: 768px){
+  .home {
+    height: 80vh;
+  }
+  
+  .neon-wrapper {
+    padding: 30px;
+  }
+  .neon-text{
+    font-size: 4rem;
+    }
+  .neon-wrapper h2{
+    font-size: 3rem;
+  }
+}
 @media (max-width: 420px){
   .home {
     height: 100vh;
@@ -60,19 +74,5 @@
     font-size: 2rem;
   }
 }
-@media (max-width: 768px){
-  .home {
-    height: 80vh;
-  }
-  
-  .neon-wrapper {
-    padding: 30px;
-  }
-  .neon-text{
-    font-size: 4rem;
-    }
-  .neon-wrapper h2{
-    font-size: 3rem;
-  }
-}
+
   

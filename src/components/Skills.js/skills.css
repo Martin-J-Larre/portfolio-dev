@@ -61,6 +61,39 @@
   width: 40%;
   z-index: -4;
 }
+@media (max-width: 1024px){
+  .skills {
+    height: 70vh;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px){
+  .skill--box {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .skill--box h2 {
+    margin: 20px;
+  }
+  .skill--box p {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .skill-slider .item{
+    width: 140px;
+    height: 140px;
+  }
+  .tech-name{
+    margin-top: 15px;
+  }
+  .background-image-right{
+    display: none;
+  }
+}
+
 @media (max-width: 420px){
   .skills {
     height: 70vh;
