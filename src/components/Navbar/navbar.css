@@ -133,98 +133,22 @@ nav.navbar .navbar-toggler:focus {
       height: 40px;
   }
 }
-
-@media (max-width: 991px){
-  nav.navbar {
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    transition:  0.32 ease-in-out;
+@media (max-width: 992px){
+  div.container-nav.container{
+    margin: 0;
+    max-width: 991px;
   }
-  nav.navbar.scrolled {
-    padding: 0px 0;
-    background-color: #121212;
+  div.ms-auto.navbar-nav{
+    width: 80%;
+    margin: 0 20px !important;
+    justify-content: center;
   }
-  nav.navbar .navbar-nav .nav-link.navbar-link {
-    font-weight: 400;
-    color: #fff !important;
-    letter-spacing: 0.8px;
-    padding: 0 15px;
-    margin: 0 15px;
-    font-size: 18px;
-    opacity: 0.75;
-  }
-  nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-  nav.navbar .navbar-nav a.nav-link.navbar-link.active {
-      opacity: 1;
-  }
-  span.navbar-text {
-      display: flex;
-      align-items: center;
+  .navbar-text{
+    width: 200px;
   }
   .social-icon {
-      display: inline-block;
-      margin-left: 145px;
-  }
-  .social-icon a {
-      width: 42px;
-      height: 42px;
-      background: rgba(217, 217, 217, 0.1);
-      display: inline-flex;
-      border-radius: 50%;
-      margin-right: 10px;
-      align-items: center;
-      justify-content: center;
-      line-height: 1;
-      border: 1px solid rgba(255, 255, 255, 0.5);
-  }
-  .social-icon a::before {
-      content: "";
-      width: 42px;
-      height: 42px;
-      position: absolute;
-      background-color: #ffffff;
-      border-radius: 50%;
-      transform: scale(0);
-    transition: 0.3s ease-in-out;
-  }
-  .social-icon a:hover::before {
-      transform: scale(1);
-  }
-  .social-icon a img {
-    width: 40%;
-    z-index: 1;
-    transition: 0.3s ease-in-out;
-  }
-  .social-icon a:hover img {
-    filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
-  }
-  .language{
-    display: flex;
-  }
-  .navbar-lang .language select{
-    border: none;
-    background: transparent;
-    font-weight: 400;
-    color: #fff !important;
-    font-size: 18px;
-    opacity: 0.75;
-    margin: 0 5px;
-  }
-  .navbar-lang .language select option{
-    color: #121212;
-  }
-  nav.navbar .navbar-toggler:active,
-  nav.navbar .navbar-toggler:focus {
-    outline: none;
-    box-shadow: none;
-  }
-  .hamburger-nav {
-    font-size: 40px;
-    color: #fff;
-  }
+    margin-left: 0;
+}
 }
 
 @media (max-width: 767px){
@@ -273,6 +197,11 @@ nav.navbar .navbar-toggler:focus {
     padding: 0 15px;
     margin: 10px auto;
     font-size: 25px;
+  }
+  .navbar-text{
+    width: 100%;
+    align-items: center;
+
   }
   .social-icon {
       display: inline-block;
