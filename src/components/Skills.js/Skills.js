@@ -12,16 +12,16 @@ export const Skills = () => {
 
   const responsive = {
     largeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 7
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 1645, min: 1200 },
       items: 6
     },
+    desktop: {
+      breakpoint: { max: 1200, min: 800},
+      items: 5
+    },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 4
+      breakpoint: { max: 800, min: 464 },
+      items: 3
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
