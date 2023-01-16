@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav} from "react-bootstrap";
 import { useTranslation } from 'react-i18next';
 import "./navbar.css";
 import navIcon1 from "../../assets/img/nav-icon1.svg";
@@ -47,7 +47,6 @@ export const NavBar = () => {
     //   localStorage.setItem("lng", event.target.value);
     };
 
-		
     return (
         <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
             <Container className="container-nav">

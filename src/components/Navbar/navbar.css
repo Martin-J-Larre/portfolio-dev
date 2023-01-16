@@ -88,6 +88,7 @@ nav.navbar .navbar-toggler:focus {
   font-size: 40px;
   color: #fff;
 }
+
 @media (max-width: 2000px){
   nav.navbar .navbar-nav .nav-link.navbar-link {
     letter-spacing: 0.6px;
