@@ -6,3 +6,8 @@ footer {
     align-items: center;
     opacity: 0.75;
 }
+@media (max-width: 850px){
+    footer{
+        display: none;
+    }
+}

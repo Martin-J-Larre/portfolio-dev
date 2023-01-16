@@ -88,16 +88,24 @@ nav.navbar .navbar-toggler:focus {
   font-size: 40px;
   color: #fff;
 }
-
+@media (max-width: 2000px){
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    letter-spacing: 0.6px;
+    padding: 0 25px;
+    margin: 0 25px;
+  }
+}
 @media (max-width: 1630px){
-  .social-icon {
-      margin-left: 250px;
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    letter-spacing: 0.6px;
+    margin: 0 20px;
   }
 }
 
 @media (max-width: 1400px){
-  .social-icon {
-      margin-left: 150px;
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    padding: 0 15px;
+    margin: 0 15px;
   }
 }
 

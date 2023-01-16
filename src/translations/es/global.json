@@ -13,17 +13,17 @@
   "about":{
     "title": "Sobre mi",
     "iam": " Yo soy un ...",
-    "text1": "Hola, Yo soy Martin. Yo soy un desarrollador web de Buenos Aires, Argentina *pero* establecido en Nueva York.",
-    "text2": "Despues de mas de una decada dedicandome a otra industria, decidi seguir mis intereses personales, estudiando programacion y desarrollo web durante la pandemia. Me gradue como Tecnico superior en programacion y complete varios cursos entre ellos una certificacion Desarrollo Full Stack en una academia digital.",
-    "text3": "Soy un apasionado por la tecnologia y continuar mejorando mis habilidades en el desarrollo web. Estoy buscando con ansias una campania donde pueda sumar, seguir aprendiendo y crecer.",
+    "text1": "Mi nombre es Martín, soy un desarrollador web argentino viviendo en Nueva York.",
+    "text2": "Luego de muchos años dedicándome a otra industria, durante la pandemia decidí dedicarme y formarme en lo que realmente me gustaba: la programación y el desarrollo web. Me gradué como Técnico Superior en Programación, también realicé varios cursos en academias digitales y además de forma autodidacta.",
+    "text3": "Soy un apasionado por la tecnología y sigo constantemente tratando de mejorar mis habilidades y aprendiendo nuevas. Estoy buscando una compañía donde pueda aplicar mis habilidades conseguidas en este tiempo, seguir aprendiendo y crecer profesionalmente.",
     "resume":"Descargar mi CV"
   },
   "projects":{
     "title": "Proyectos",
-    "text": "Estos son algunos projectos en lo que estado trabajando para aplicar y mejorar mis habilidades con las tecnologias que estoy usando. Para el frontend hay algunos projectos estaticos, con vanilla JavaScript y React. Para el backend hay REST APIs con nodeJS y para full stack proyectos MERN stack"
+    "text": "Estos son algunos de mis proyectos en lo que he estado aplicando lo aprendido y además mejorando día a día mis habilidades."
   },
   "skills":{
-    "text":"Estas son algunas de las tecnologias que eh aprendido y uso en mis proyectos. Sigo contantemente tratando de mejorar mis habilidades con estas y aprendiendo nuevas. "
+    "text":"Estas son algunas de las tecnologías que he aprendido, sigo perfeccionándome y utilizando en mis  proyectos."
   },
   "contact":{
     "title": "Contacto",

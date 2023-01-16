@@ -23,7 +23,7 @@
   },
   "projects":{
     "title": "Projects",
-    "text": "These are projects I've worked on to improve my skills with the technologies that I'm using. For frontend projects there are static with vanilla JavaScript and with React. For backend there are REST APIs with nodeJS and for full stack there are MERN stack projects."
+    "text": "These are projects I've worked on to improve my skills with the technologies that I'm using."
   },
   "contact":{
     "title": "Contact",
