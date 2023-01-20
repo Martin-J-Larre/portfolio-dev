@@ -4,6 +4,7 @@ import './home.css'
 
 export const Home = () => {
   const [t, i18n] = useTranslation('global');
+  
 
   return (
     <section className='home' id='home'>

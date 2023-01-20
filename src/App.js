@@ -7,6 +7,7 @@ import { Contact } from './components/Contact/Contact';
 import { About } from './components/About/About';
 import Footer from './components/Footer/Footer';
 
+
 function App() {
   return (
     <div className="App">

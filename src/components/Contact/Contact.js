@@ -30,7 +30,7 @@ export const Contact = () => {
         e.preventDefault();
         setButtonText('Sending...');
         setButtonText2('Enviando...');
-        let response = await fetch("http://localhost:5000/contact", {
+        let response = await fetch("https://martinjlarre-portfolio-dev-server.onrender.com/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json;charset=utf-8",
