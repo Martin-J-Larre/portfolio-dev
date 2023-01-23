@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useTranslation } from 'react-i18next';
 import { AboutIntervalText } from './AboutIntervalText'
@@ -41,7 +40,7 @@ export const About = () => {
                 </Row>
                 </div>
             </Container>
-            <img src={colorSharp} className="background-image-left" />
+            <img src={colorSharp} className="background-image-left" alt="background"/>
         </section>
     );
 };
