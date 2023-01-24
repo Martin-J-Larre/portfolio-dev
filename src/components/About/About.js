@@ -26,12 +26,12 @@ export const About = () => {
                     <Col> 
                       {
                         i18n.language === 'en' ? 
-                        <a  href="test-resume.pdf"
-                        download="test-resume.pdf">
+                        <a  href="resume-martin-j-larre-en.pdf"
+                        download="resume-martin-j-larre-en.pdf">
                           <button className="download-btn">{t("about.resume")}</button>
                         </a> : 
-                        <a  href="tecnicatura-programacion-tramite.pdf"
-                        download="tecnicatura-programacion-tramite.pdf">
+                        <a  href="cv-martin-j-larre-es.pdf"
+                        download="cv-martin-j-larre-es.pdf">
                           <button className="download-btn">{t("about.resume")}</button>
                         </a> 
                       }
