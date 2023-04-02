@@ -1,13 +1,11 @@
-
-// import projImg3 from '../assets/img/p-3.png';
-
+import kanban from "../assets/img/kanban.png";
 
 export const projectsListFullstack = [
-  // {
-  //   title: "Business Startup",
-  //   description: "Design & Development",
-  //   imgUrl: projImg3,
-  //   gitHubUrl:"https://github.com/Martin-J-Larre/test-2-heroku",
-  //   demoUrl:"https://github.com/Martin-J-Larre/test-2-heroku"
-  // }
+  {
+    title: "Kanban app",
+    description: "MERN stack, MUI, Redux",
+    imgUrl: kanban,
+    gitHubUrl: "https://github.com/Martin-J-Larre/kanban-app",
+    demoUrl: "https://kanban-app-mern.netlify.app/",
+  },
 ];
